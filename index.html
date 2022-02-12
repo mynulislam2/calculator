@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/media-queries.css" />
+</head>
+
+<body>
+  <div class="calculator">
+    <!-- Calculator display -->
+    <div class="calculator__display display">
+      <p id="display__operation" class="display__operation"></p>
+      <p id="display__result" class="display__result"></p>
+    </div>
+
+    <!-- Calculator pad -->
+    <div class="calculator__pad pad">
+      <div onclick="(key__ac())" class="pad__key ">AC</div>
+      <div onclick="(key__del())" class="pad__key ">DEL</div>
+      <div onclick="cal('+')" class="pad__key ">%</div>
+      <div onclick="cal('/')" class="pad__key ">÷</div>
+      <div onclick="cal('7')" class="pad__key ">7</div>
+      <div onclick="cal('8')" class="pad__key ">8</div>
+      <div onclick="cal('9')" class="pad__key ">9</div>
+      <div onclick="cal('*')" class="pad__key ">x</div>
+      <div onclick="cal('4')" class="pad__key ">4</div>
+      <div onclick="cal('5')" class="pad__key ">5</div>
+      <div onclick="cal('6')" class="pad__key ">6</div>
+      <div onclick="cal('-')" class="pad__key ">-</div>
+      <div onclick="cal('1')" class="pad__key ">1</div>
+      <div onclick="cal('2')" class="pad__key ">2</div>
+      <div onclick="cal('3')" class="pad__key ">3</div>
+      <div onclick="cal('+')" class="pad__key ">+</div>
+      <div class="pad__key ">.</div>
+      <div onclick="cal('0')" class="pad__key ">0</div>
+      <div onclick="get__result('=')" class="pad__key pad__key--equal">=</div>
+    </div>
+  </div>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
